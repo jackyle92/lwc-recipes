@@ -1,0 +1,8 @@
+<template>
+    <button onclick={handleClick}>Change addOneMore</button>
+    <c-child>
+        <template if:true={addOneMore}>
+            <slot onslotchange={handleSlotChange}></slot>
+        </template>
+    </c-child>
+</template>

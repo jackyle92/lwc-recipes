@@ -1,0 +1,14 @@
+<template>
+  <lightning-card title="Account List Using for:Each" icon-name="custom:custom63">
+    <div class="slds-m-around_medium">
+      <template if:true={accountList.data}>
+        <template for:each={accountList} for:item="account">
+          <li key={account.id}>{account.Name} | {account.AnnualRevenue}</li>
+        </template>
+      </template>
+      <template if:false={accountList.error}>
+        error
+      </template>
+    </div>
+  </lightning-card>
+</template>

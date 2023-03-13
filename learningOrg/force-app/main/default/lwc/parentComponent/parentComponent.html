@@ -1,0 +1,12 @@
+<template>
+  <lightning-card title="Parent Component" icon-name="standard:lightning_component">
+    <div class="slds-p-around_medium">
+
+      <p>Parent Component</p>
+      <c-child-component greeting="Hello from Parent Component" get-id-form-parent={recordId}
+        object-api-name={objectApiName}></c-child-component>
+      <!-- button component -->
+      <lightning-button label="Call Child Method" onclick={handleChange}></lightning-button>
+    </div>
+  </lightning-card>
+</template>

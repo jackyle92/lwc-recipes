@@ -1,0 +1,21 @@
+<apex:page sidebar="fase" showheader="true">
+    <style>
+         .myclass{
+             font-weight:bold;
+             color: blue;
+             }
+    </style>
+
+    <h1>My heading</h1>
+    <p class="myclass">This is so cool! </p>
+    
+    {!IF(false, Today(), "Not today")}
+    
+    {!$User.FirstName}
+    
+    <apex:pageblock title="My Pageblock" mode="edit">
+        <apex:pageblockSection title="My Section">
+        
+        </apex:pageblockSection>
+    </apex:pageblock>
+</apex:page>

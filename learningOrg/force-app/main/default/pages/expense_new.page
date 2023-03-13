@@ -1,0 +1,12 @@
+<apex:page standardController="Opportunity">
+    <apex:form >
+        <apex:pageBlock title="Expense Edit" mode="edit">
+            <apex:pageBlockSection title="Information">
+                <apex:inputField value="{!Opportunity.amount}"/>
+            
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+    </apex:form>
+
+</apex:page>

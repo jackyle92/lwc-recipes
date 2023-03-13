@@ -1,0 +1,8 @@
+<aura:component >
+    <c:HelloWorld/>
+    <h2>
+    	Aute anim proident laboris laboris ipsum aliquip eu quis ad excepteur irure sint.
+    </h2>
+    Name: <input type='text' lable='Name' placeholder='Nothing Here'/>
+    
+</aura:component>

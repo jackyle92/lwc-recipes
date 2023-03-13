@@ -1,0 +1,48 @@
+<template>
+    <lightning-card title="HelloIterator" icon-name="custom:custom14">
+        <div class="slds-var-m-around_medium">
+            <p>Hello, {name}</p>
+            <p style="background-color: lightgrey;">{announcement}</p>
+            <!-- get value from property -->
+            <h2>{resultOfCalculator}</h2>
+
+            Name:
+            <input type="text" value={name} oninput={handleInput}></input>
+        </div>
+
+        <div class="slds-var-m-around_medium">
+            Uppercased Full Name: {uppercaseFullName}
+        </div>
+        <ul class="slds-var-m-around_medium">
+            <template for:each={contacts} for:item="cont">
+                <li key={cont.Id}>
+                    {cont.Name}, {cont.Title}
+                </li>
+
+            </template>
+
+        </ul>
+        <h2>Iterator</h2>
+        <ul class="slds-var-m-around_medium">
+            <template iterator:it={contacts}>
+                <li key={it.value.Id}>
+                    <div if:true={it.first} class="list-first"></div>
+                    {it.value.Name}, {it.value.Title}
+                    <div if:true={it.last} class="list-last"></div>
+                </li>
+            </template>
+        </ul>
+
+
+        Swap condition:
+        <input type="checkbox" onchange={onHandleCheckbox} />
+        <!-- Rendering HTML Conditionally -->
+        <template if:true={isTemplateOne}>
+            This is template one.
+            <h1>Finally, you did it</h1>
+        </template>
+        <template if:false={isTemplateOne}>
+            This is not template one.
+        </template>
+    </lightning-card>
+</template>

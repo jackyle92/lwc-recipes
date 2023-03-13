@@ -1,0 +1,18 @@
+<apex:page sidebar="false" tabStyle="Movie__c" lightningStylesheets="true" title="First*Page">
+    <style type="text/css">
+        .container{
+            width: 1080px;
+            margin: 20px auto;
+            color: #343a40;
+        }
+    </style>
+    <apex:outputPanel layout="block" styleClass="container">
+        <apex:pageBlock title="This is my first Visualforce page">
+            <apex:pageBlockSection title="Hello">
+                Hello World
+                <br/>
+                Fugiat culpa voluptate fugiat anim excepteur excepteur ipsum commodo amet sunt cillum quis.
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:outputPanel>
+</apex:page>
