@@ -1,9 +1,0 @@
-<apex:page controller="CustomControllerSetMethod" lightningStylesheets="true">
-  
-  <apex:form >
-    <apex:outputLabel value="Enter text: "></apex:outputLabel>
-    <apex:inputText value="{!text}"/>
-    <apex:commandButton value="Save" action="{!save}"/><p/>
-    <apex:outputText value="The Text you entered is: {!text}"/>
-  </apex:form>
-</apex:page>
